@@ -1,0 +1,40 @@
+CONSTRUCTOR METHOD : 
+____________________________________________________________________________________________________________________________________________________________
+This method instantiates the blockchain. Inside the constructor, I created the blockchain property, which refers to an array of blocks. Notice that I passed to it the Genesis_Block() method, which creates the initial block in the chain.
+
+CREATING THE GENESIS BLOCK : 
+_____________________________________________________________________________________________________________________________________________________________
+In a blockchain, the genesis block refers to the first-ever block created on the network. Whenever a block is integrated with the rest of the chain, it should reference the preceding block.
+
+CONTENT OF A BLOCK :
+_____________________________________________________________________________________________________________________________________________________________
+index : It’s a unique number that tracks the position of every block in the entire blockchain.
+timestamp :It keeps a record of the time of occurrence of each completed transaction.
+data : It provides data about the completed transactions, such as the sender details, recipient’s details, and quantity transacted.
+previous hash : Each block contains the hash of the block header of the previous block, ensuring that nothing has been tampered with as new blocks are added.
+current hash : It points to the hash of the preceding block in the blockchain, something important in maintaining the blockchain’s integrity.
+nonse : A nonce is an abbreviation for "number only used once," which is a number added to a hashed—or encrypted—block in a blockchain that, when rehashed, meets the difficulty level restrictions. The nonce is the number that blockchain miners are solving for, in order to receive cryptocurrency.
+
+HASH ALGORITHM :
+_____________________________________________________________________________________________________________________________________________________________
+SHA256 : SHA stands for Secure Hash Algorithm.IT uses 256 bit hexadecimal value. It's an one way encryption means Data only be converted into hash value but we cann't invert it agai.
+
+
+VIRTUAL ENVIRONMENT :
+_____________________________________________________________________________________________________________________________________________________________
+A Virtual environment is a tool that helps keep the dependencies required in different projects separately. A Virtual environment is designed to allow you to work on multiple projects that require diverse dependencies.
+
+
+OBTAINING THE LATEST BLOCK :
+_____________________________________________________________________________________________________________________________________________________________
+Getting the latest block in the blockchain assists in ensuring the hash of the current block points to the hash of the previous block — thus maintaining the chain’s integrity.
+I used the Latest_Block() method to retrieve it.
+
+ADDING NEW BLOCKS :
+_____________________________________________________________________________________________________________________________________________________________
+I used the Add_New_Block() method to add a new block to the chain. To accomplish this, I set the previous hash of the new block to be equal to the hash of the last block in the chain — thus ensuring the chain is tamper-proof.Since the properties of the new block get changed with every new calculation, it’s important to calculate its cryptographic hash again. After updating its hash, the new block is pushed into the blockchain array.In reality, adding a new block to a blockchain is not that easy because of the several checks that have been placed. Nonetheless, for this simple cryptocurrency, it’s enough to demonstrate how a blockchain actually works.
+
+
+
+SUBHANKAR DAS
+Kolkata(13-06-22)

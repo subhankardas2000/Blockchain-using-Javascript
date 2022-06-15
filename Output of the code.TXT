@@ -1,0 +1,40 @@
+PS C:\Users\subha> node Das1.js
+Mining is in progress!!!!!!!
+{
+    "blockchain": [
+        {
+            "index": 0,
+            "timestamp": "06.06.2022",
+            "data": "Initial Block in the Chain",
+            "preceding_Hash": "0",
+            "hash": "0",
+            "nonce": 0
+        },
+        {
+            "index": 1,
+            "timestamp": "06.06.2022",
+            "data": {
+                "sender": "Sharma",
+                "recipient": "Das",
+                "quantity": 5
+            },
+            "preceding_Hash": " ",
+            "hash": "0000768bb582d7bbab915b86327aa4978ff2bb35b4b0e1966b49b8243ca29f33",
+            "nonce": 61409,
+            "precedingHash": "0"
+        },
+        {
+            "index": 2,
+            "timestamp": "08.06.2022",
+            "data": {
+                "sender": "Das",
+                "recipient": "Subhankar",
+                "quantity": 10
+            },
+            "preceding_Hash": " ",
+            "hash": "00007eef0ed0954909ababea1b5b065ece2856746c37a11c977c9b5dcb3b6749",
+            "nonce": 26095,
+            "precedingHash": "0000768bb582d7bbab915b86327aa4978ff2bb35b4b0e1966b49b8243ca29f33"
+        }
+    ],
+    "difficulty": 4
